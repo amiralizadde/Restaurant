@@ -1,0 +1,15 @@
+.menus__right-breadcrumb{
+    display: flex;
+    align-items: center;
+}
+.breadcrumb__list{
+    display: flex;
+    align-items: center;
+    margin: 0 0.8rem;
+}
+.breadcrumb__link{
+    font-size: 20px;
+}
+.breadcrumb__icon{
+    font-size: 14px;
+}

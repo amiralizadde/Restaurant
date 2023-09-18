@@ -1,0 +1,19 @@
+/* __________________Start footer style_______________________________ */
+
+footer{
+    padding: 40px;
+    background-color: var(--dark-color);
+   }
+   footer a{
+    color: #e3e1e1;
+   }
+   footer span,
+   footer li{
+    color: #c4c4c4;
+   }
+   footer p{
+    color: white;
+   }
+  
+  /* __________________finish footer style_______________________________ */
+  

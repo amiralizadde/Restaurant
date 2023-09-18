@@ -1,0 +1,43 @@
+@import "./default.css";
+@import "./reset.css";
+@import "./variables.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+@import "./footer.css";
+@import "./breadcrumb.css";
+@import "./pagination.css";
+@import "./foodBoxTemplate.css";
+
+/* __________Start main-header style________________ */
+
+.main-header__content{
+    width: 100%;
+    height: 30vw; 
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-header__content-title{
+    color: var(--white-color);
+    font-size: 80px;
+}
+
+@media screen and (max-width:991px){
+    .main-header__content{
+        height: 40vw;
+    }
+    .main-header__content-title{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:576px){
+    .main-header__content{
+        height: 80vw;
+    }
+    .main-header__content-title{
+        font-size: 35px;
+    }
+}
+
+/* __________Finish main-header style________________ */

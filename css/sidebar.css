@@ -1,0 +1,195 @@
+
+/*_____________ Start sidebar Style __________________________________*/
+hr{
+    color: #545252;
+}
+.sidebar {
+    display: none;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #0f0f0f;
+    z-index: 10 !important;
+    padding:  2rem;
+  }
+  .sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .active-sidebar {
+    display: block;
+    animation: showAsideUserCart 0.5s ease;
+  }
+  #sidebar-header__title{
+    color: var(--white-color);
+    font-size: 23px;
+  }
+  .sidebar-header__close {
+    color: white;
+    font-size: 23px;
+  }
+  .sidebar-header__close:hover {
+    color: #c4c4c4;
+  }
+  .sidebar-content__list{
+    padding: 2rem;
+  }
+  .sidebar-content__text{
+    font-size: 17px;
+    color: var(--white-color);
+  }
+  aside .btn-back {
+    background-color: #5f6e1e;
+    border-radius: 0;
+  }
+  aside .btn-back:hover {
+    background-color: #373f11;
+  }
+  aside .footer-sidebar {
+    /* position: fixed; */
+    background-color: #000;
+    margin-bottom: 10%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 3 !important;
+  }
+
+  /* ----start sidebar user-account----- */
+  .sidebar__user-name-input,
+  .sidebar__password-input{
+    padding:7px 20px;
+    font-size: 15px;
+    border-radius: 0;
+  
+  }
+  .sidebar-login__button{
+    background-color: var(--orginal-color);
+    width: 100%;
+    padding:7px 20px;
+    font-size: 15px;
+    margin-top: 15px;
+      border-radius: 0;
+  }
+  .sidebar-login__user-icon{
+    font-size: 9rem;
+  }
+  .sidebar-login__text{
+    font-size:18px;
+    margin: 0.5rem;
+    color: var(--white-color);
+  }
+  .sidebar-login__text:hover{
+   color: blue;
+  }
+  /* ----finish sidebar user-account----- */
+  /* ----Start sidebar user-cart----- */
+    .sidebar-user-cart{
+      display:flex ;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .sidebar-user-cart__icon{
+      font-size: 80px;
+      margin: 15px;
+      color: #545252;
+    }
+    .sidebar-user-cart__text{
+      font-size: 17px;
+    }
+    .sidebar-user-cart__button:hover{
+      color: #fff;
+      background-color:#373f11
+    }
+    .sidebar-user-cart__button{
+      font-size: 16px;
+      color: var(--white-color);
+      background-color: var(--orginal-color);
+      margin: 2rem;
+      padding: 1rem 2rem;
+    }
+    .sidebar-content__cart-box{
+      border: 1px solid #7b7b7b;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .sidebar-content__cart-box:hover{
+      border: 1px solid #7b7b7b;
+      border-radius: 5px;
+    }
+    .sidebar-content__cart-image-box{
+      padding: 5px;
+      /* border: 1px solid white; */
+    }
+    .sidebar-content__cart-image{
+      width: 100%;
+      height: 75px;
+      object-fit: cover;
+    }
+    .sidebar-content__cart-text-box{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-footer{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sidebar-footer__totalPrice-box{
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+    }
+    .sidebar-footer__totalPrice-text{
+      color: white;
+      font-size: 24px;
+    }
+    .sidebar-footer__totalPrice-number{
+      color: var(--orginal-color);
+      font-size: 24px;
+    }
+    .sidebar-footer__addToCartBtn{
+      background-color: #fff;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .sidebar-footer__goPayment{
+      background-color: var(--orginal-color);
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .sidebar-content .container-fluid{
+      overflow-y: auto;
+      max-height: 63vh;
+    }
+
+    .sidebar__delete-food{
+      cursor: pointer;
+    }
+  /* ----finish sidebar user-cart----- */
+
+  
+  @keyframes showAsideUserCart {
+    0% {
+      transform: translateX(-300px);
+      width: 300px;
+    }
+    100% {
+      width: 300px;
+    }
+  }
+  
+
+/* __________Finish sidebar Style ___________________________ */

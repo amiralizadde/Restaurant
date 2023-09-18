@@ -1,0 +1,170 @@
+@import "./default.css";
+@import "./reset.css";
+@import "./variables.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+@import "./footer.css";
+@import "./breadcrumb.css";
+@import "./pagination.css";
+@import "./foodBoxTemplate.css";
+
+/* __________Start main-header style________________ */
+
+    .main-header__image{
+        width: 100%;
+        height: 45vw;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width:991px){
+        .main-header__image{
+            height: 60vw;
+        }
+    }
+    @media screen and (max-width:576px){
+        .main-header__image{
+            height: 80vw;
+        }
+    }
+
+/* __________Finish main-header style________________ */
+
+
+/* __________Start main style________________ */
+
+.menus-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+
+.menus__left-selection{
+    font-size: 18px;
+    padding: 1rem 3rem;
+}
+.menus__left-selection-item{
+    padding: 10px;
+}
+/* .menus-content__box-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* .menus-content__image{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+}
+.menus-content__box-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menus-content__food-info-name{
+    font-size: 20px;
+    margin-top: 1rem;
+    text-align: center;
+}
+.menus-content__food-info-price{
+    font-size: 20px;
+    color: var(--orginal-color);
+    text-align: center;
+}
+.menus-content__food-funcs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+}
+.menus-content__box{
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.menus-content__box:hover{
+    box-shadow: 0px 4px 10px 0px #c4c4c4;
+}
+.menus-content__box:hover .menus-content__food-funcs{
+    visibility: visible;
+    animation: showBoxFood 0.5s ease;
+}
+.menus-content__food-funcs-button{
+    padding: 1rem 2rem;
+    font-size: 16px;
+    background-color: var(--orginal-color);
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    margin: 1rem 0rem 1rem 4rem;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+} */
+/* .menus-content__food-funcs-button::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: 'افزودن به سبد خرید';
+    transition: all .3s
+  } */
+  /* .menus-content__food-funcs-button:hover::before {
+    top: -60px;
+  } */
+ /* .menus-content__cart-icon{
+    display: none;
+  }
+  .menus-content__food-funcs-button:hover .menus-content__cart-icon{
+    display: block;
+    transition: all 1s;
+    font-size: 20px;
+    animation: add-to-cart 0.5s;
+  }
+.menus-content__food-funcs-button:hover{
+    color: #fff;
+    background-color:rgb(44, 69, 3);
+}
+.menus-content__food-funcs-icon{
+    font-size: 23px;
+    color: red;
+    cursor: pointer;
+}
+.menus-content__food-funcs-icon:hover{
+    animation: heart 0.3s infinite;
+}
+  @keyframes add-to-cart{
+    0%{
+      transform: translateY(100px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+  @keyframes heart{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform:  scale(1.4);
+    }
+  }
+
+  @keyframes showBoxFood {
+    0%{
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
+/* __________Finish main style________________ */
+

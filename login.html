@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>woodmart</title>
+        <link rel="shortcut icon " type="image/png" href="images/logo/woodmart_icon.png"/>
+        <link rel="stylesheet" href="vendors/bootstrap5/bootstrap.min.css" />
+        <link rel="stylesheet" href="vendors/SwiperSlider/swiper.css">
+        <link rel="stylesheet" href="vendors/font-awesome5/css/all.min.css" />
+        <link rel="stylesheet" href="vendors/iHover/ihover.min.css">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/login.css" />
+    </head>
+</head>
+<body>
+
+    <!----------start Header ---------->
+        <header class="header">
+            <nav class="top-bar navbar navbar-expand-lg">
+                <div class="container-fluid">
+
+                    <div class="top-bar__before-expand-nav">
+                            <div class="top-bar__before-expand-right">
+
+                                <a class="top-bar__before-expand-right-link" aria-current="page" href="#">
+                                    <i class="fa-solid fa-magnifying-glass top-bar__before-expand-right-searchIcon" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                                </a>
+                                <a type="button"  href="favorites.html" class="top-bar__before-expand-right-link position-relative">
+                                    <i class="fa-regular fa-heart top-bar__before-expand-right-heartIcon"></i>
+                                    <span class="top-bar__before-expand-right-number">
+                                1
+                                    <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                                <div class="top-bar__before-expand-center">
+                                
+                                <ul class="top-bar__before-expand-center-list">
+                                    <li class="top-bar__before-expand-center-item">
+                                        <a class="top-bar__before-expand-center-link" href="index.html">
+                                        <span class="top-bar__before-expand-center-text">خانه</span>
+                                        </a>
+                                    </li>
+                                    <li class="top-bar__before-expand-center-item">
+                                        <a class="top-bar__before-expand-center-link" href="#">
+                                            <span class="top-bar__before-expand-center-text">بلاگ</span>
+                                        </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                        <a class="top-bar__before-expand-center-link" href="#">
+                                            <span class="top-bar__before-expand-center-text">صفحات</span>
+                                        </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                        <a class="top-bar__before-expand-center-link" href="menus.html?page=1">
+                                            <span class="top-bar__before-expand-center-text">لیست منو</span>
+                                        </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                        <a class="top-bar__before-expand-center-link" href="#">
+                                            <img src="images/logo/wood-logo-white-reserve.png" class="top-bar__before-expand-center-img" alt="">
+                                        </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                        <a class="top-bar__before-expand-center-link"  href="index.html">
+                                            <span class="top-bar__before-expand-center-text">خانه</span>
+                                        </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                            <a class="top-bar__before-expand-center-link" href="#">
+                                            <span class="top-bar__before-expand-center-text">بلاگ</span>
+                                            </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                            <a class="top-bar__before-expand-center-link" href="#">
+                                            <span class="top-bar__before-expand-center-text">صفحات</span>
+                                            </a>
+                                        </li>
+                                        <li class="top-bar__before-expand-center-item">
+                                            <a class="top-bar__before-expand-center-link"  href="menus.html?page=1">
+                                            <span class="top-bar__before-expand-center-text">لیست منو</span>
+                                            </a>
+                                        </li>
+                                </ul>
+                            </div> 
+                            <div class="top-bar__before-expand-left">
+                                <a  class="top-bar__before-expand-left-link"  data-name="user-account" id="top-bar__user-account">
+                                    <i class="fa-regular fa-user top-bar__before-expand-left-icon" data-name="user-account"></i>
+                                </a>
+                                <a type="button" class="top-bar__before-expand-left-link position-relative top-bar__user-cart" id="top-bar__user-cart" data-name="user-cart">
+                                <i class="fa-solid fa-cart-shopping top-bar__before-expand-left-icon"       data-name="user-cart"></i>
+                                <span class="top-bar__before-expand-left-number top-bar__cart">
+                                0
+                                <span class="visually-hidden">unread messages</span>
+                                </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+
+                    <div class="top-bar__after-expand-nav">
+
+                        <button class="navbar-toggler top-bar__after-expand-menu " id="top-bar__menu" data-name="menu" type="button" >
+                            <i class="fa-solid fa-bars top-bar__after-expand-menu-icon" data-name="menu"></i>
+                            <span class="text-white"data-name="menu"> فهرست </span>
+                        </button>
+                        
+                        <img
+                            src="images/logo/wood-logo-white-reserve.png"
+                            class="top-bar__after-expand-img"
+                        />
+            
+                        <button type="button" class="top-bar__after-expand-user-cart btn position-relative top-bar__user-cart">
+                            <i class="fa-solid fa-cart-shopping top-bar__after-expand-cart-icon" data-name="user-cart"></i>
+                            <span class="top-bar__after-expand-cart-number top-bar__cart">
+                                0
+                            <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+
+                    </div> 
+
+                    
+                    
+                </div>
+            </nav>
+            <div class="main-header">
+                <div class="main-header__content">
+                    <p class="main-header__content-title">حساب کاربری من</p>
+                </div>
+            </div>
+            
+        </header>
+    <!----------Finish Header ---------->
+    
+    <!---------- Start sidebar ---------->
+        <aside>
+        <div class="container sidebar">
+            <div  class="sidebar-header">
+            <span class="" id="sidebar-header__title"></span>
+            <button class="sidebar-header__close btn">
+                بستن <i class="fa-solid fa-xmark sidebar-header__close-icon"></i>
+            </button>
+            </div>
+            <hr class="text-white" />
+        
+            <div class="sidebar-content">
+            <!-- Load From JS -->
+            
+            </div>
+        </div>
+        </aside>
+    <!---------- Finish sidebar ---------->
+    
+    <main >
+
+     <section class="login">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-2 login-content">
+                <div class="col login-content__form-box">
+                    <p class="h1 text-center"> ورود</p>
+                    <form class="">
+                        <div class="my-3 login-content__form-userName-box ">
+                          <label for="form-userName-label" class="form-label login-content__form-userName-label">نام کاربری</label>
+                          <input type="text" class="form-control login-content__form-userName-input" id="form-userName-label">
+                        </div>
+                        <div class="my-3 login-content__form-password-box">
+                          <label for="form-password-label" class="form-label login-content__form-password-label">پسورد</label>
+                          <input type="password" class="form-control login-content__form-password-input" id="form-password-label">
+                        </div>
+                      
+                       <div class=" d-flex flex-column flex-sm-row align-items-start justify-content-sm-between">
+                        <div class="my-3 form-check login-content__form-check-box">
+                          <input type="checkbox" class="form-check-input " id="form-check-box">
+                          <label class="form-check-label  " for="form-check-box">مرا به خاطر بسپار</label>
+                        </div>
+                        <div class="login-content__isHave-account">
+                           <p>قبلا ثبت نام نکرده اید?</p>
+                           <a href="register.html" class="text-primary m-4">کلیک کن</a>
+                        </div>
+                      </div>
+                        <button type="submit" class="btn login-content__form-btn">ورود </button>
+                      </form>
+                </div>
+
+                <div class="col login-content__text-box">
+                    <p class="login-content__text-title">ورود </p>
+                    <p class="login-content__text-info  mt-5">
+                   ثبت نام 
+                        در 
+                        این سایت به شما امکان می دهد به وضعیت
+                         سفارش و سابقه خود دسترسی پیدا کنید.
+                         کافی است فیلدهای زیر را پر کنید ،
+                         و ما در مدت زمان کوتاهی یک حساب 
+                        جدید برای شما راه اندازی می کنیم.
+                         ما فقط اطلاعات لازم را برای سریعتر 
+                        و آسان تر شدن روند خرید از شما درخواست می کنیم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    
+    <footer class="mt-5 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 d-flex flex-column">
+        <p class="h2">
+          تمامی حقوق فارسی سازی، بهینه سازی و سفارشی سازی وودمارت متعلق به
+          تم فارس میباشد.
+        </p>
+        <a class="my-3 p-1">
+          <i class="fa-solid fa-location-arrow p-2"></i>تهران
+        </a >
+        <a class="my-3 p-1">
+          <i class="fa-solid fa-mobile-screen-button p-2"></i>
+           تلفن :
+          021-1234567
+          </a>
+        <a class="my-3 p-1">
+          <i class="fa-solid fa-envelope p-2"></i> فکس : 021-1234567
+        </a>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <ul>
+              <p class="h1">فروشگاه های ما</p>
+              <li class="my-2 fs-3">تهران</li>
+              <li class="my-2 fs-3">شیراز</li>
+              <li class="my-2 fs-3">تبریز</li>
+              <li class="my-2 fs-3">ارومیه</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul>
+              <p class="h1">لینک های مفید</p>
+              <li class="my-2 fs-3">
+                <a href="#">حریم خصوصی</a>
+              </li>
+              <li class="my-2 fs-3">
+                <a href="#"> قوانین و مقررات</a>
+              </li>
+              <li class="my-2 fs-3">
+                <a href="#">تماس با ما</a>  
+              </li>
+              <li class="my-2 fs-3">
+                <a href="#"> آخرین اخبار</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </footer>
+    <script src="vendors/bootstrap5/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/login.js" type="module"></script>
+</body>
+</html>

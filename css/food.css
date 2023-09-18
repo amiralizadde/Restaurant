@@ -1,0 +1,112 @@
+@import "./default.css";
+@import "./reset.css";
+@import "./variables.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+@import "./footer.css";
+@import "./breadcrumb.css";
+
+/* ______________start main Stayle____________ */
+
+.food-details{
+    margin-top: 12rem;
+}
+.food-details__image-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food-details__image{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.food-details__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.food-details__name{
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: var(--orginal-color);
+}
+.food-details__price{
+    font-size: 35px;
+    margin-top: 1rem;
+}
+.food-details__description{
+    color: #878181;
+    font-size: 17px;
+    margin: 2rem 1rem;
+    text-align: justify;
+    width: 75%;
+}
+.food-details__funcs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem 1rem;
+}
+.food-details__funcs-decrease,
+.food-details__funcs-increase{
+    border: 1px solid #c4c4c4;
+    font-size: 20px;
+    margin: 0 0.5rem;
+}
+.food-details__funcs-addToCart-btn{
+    font-size: 17px;
+    background-color: var(--orginal-color);
+    padding: 1rem 2rem;
+    color: var(--white-color);
+
+}
+.food-details__funcs-addToCart-btn:hover{
+    color: var(--white-color);
+    background-color: #435107;
+}
+.food-details__social-media{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.food-details__social-media-icons{
+    font-size: 25px;
+    margin: 0 1rem;
+    cursor: pointer;
+    color: blue;
+}
+.food-details__social-media-text{
+    font-size: 25px;
+}
+.food-details__social-media-icons:hover{
+   color: skyblue;
+}
+
+@media screen and (max-width:991px) {
+    .food-details__box{
+        justify-content:center ;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:576px) {
+   .food-details__image{
+    width: 300px;
+    height: 300px;
+   }
+   .food-details__funcs{
+    flex-direction: column;
+    align-self: flex-start;
+    justify-self: flex-start;
+   }
+   .food-details__funcs-addToCart{
+    margin: 1rem 0 !important;
+   }
+   .food-details__funcs-addToCart-btn{
+    margin: 1rem 0 !important;
+   }
+}
+/* ______________finish main Stayle____________ */
